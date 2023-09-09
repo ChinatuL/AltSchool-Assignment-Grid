@@ -7,6 +7,12 @@ export const range = (start, end, step = 1) => {
 
   for (let i = start; i < end; i += step) {
     // loop code
+
+    if (end = "undefined") {
+      end = start;
+      start = 0;
+    }
+
     output.push(i);
   }
 
